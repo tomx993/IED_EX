@@ -51,3 +51,14 @@ if( string == string2 ){
 else{
     alert('Wrong man! :(');
 }
+
+/*
+var word = prompt('Write a word');
+
+if( word == pizza || snack){
+    alert('Pausa veloce');
+}
+else{
+    alert('Pausa indefinita');
+}
+*/
