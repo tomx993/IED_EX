@@ -31,10 +31,13 @@ function Excersize1() {
 }
 // Esercizio 2
 function Excersize2() {
+    var myNumber1 = prompt('Write a number:');
+    myNumber1 = parseInt(myNumber1);
+
     var myNumber2 = prompt('Write a second number:');
     myNumber2 = parseInt(myNumber2);
 
-    if( myNumber2 == myNumber ){
+    if( myNumber1 == myNumber2 ){
         alert('Twice? Great!!');
     }
     else{
