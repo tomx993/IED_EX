@@ -56,7 +56,7 @@ function binaryCheck(){
 }
 
 //SWITCH CASE
-function switchPie(){
+function switchPie(myNumber){
 
     switch(myNumber){
 
@@ -77,12 +77,30 @@ function switchPie(){
 
 }
 
-
 //MAIN
+/*
 alert('Simple Check');
 simpleCheck();
 
 alert('Binary Check');
 binaryCheck();
+*/
 
-switchPie();
+//switch caller
+
+function callSwitch(){
+
+    var aNumber = readNumber();
+    var message = switchPie(aNumber);
+    printMessage(message);
+
+}
+
+callSwitch();
+
+
+// mostra il menu in un alert
+// leggi l'operazione d aeffetuare
+// leggi lgi operandi
+// esegui lo swtich per l'operaione corretta( e salva il risultato )
+// scrivi il risultato
