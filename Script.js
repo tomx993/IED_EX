@@ -1,7 +1,6 @@
 //test
 
 /* 
-
 var myNumber = prompt('Write a number:');
 myNumber = parseInt(myNumber);
 
@@ -16,7 +15,6 @@ else{
 var squareRoot = Math.sqrt(myNumber);
 
 alert(squareRoot);
-
 */
 
 var myNumber = prompt('Write a number:');
@@ -26,7 +24,7 @@ if(myNumber == 10 ) {
     alert('Great!');
 }
 else{
-    alert('Bad! :(')
+    alert('Bad! :(');
 }
 
 var myNumber2 = prompt('Write a second number:');
@@ -52,13 +50,15 @@ else{
     alert('Wrong man! :(');
 }
 
-/*
+
 var word = prompt('Write a word');
 
-if( word == pizza || snack){
+if( word == 'pizza' || word == 'snack'){
     alert('Pausa veloce');
+}
+else if( word == 'spaghetti' ){
+    alert('Pausa lunga');
 }
 else{
     alert('Pausa indefinita');
 }
-*/
