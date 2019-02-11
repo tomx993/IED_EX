@@ -18,7 +18,7 @@ alert(squareRoot);
 */
 
 // Esercizio 1
-function Excersize1() {
+function Exercize1() {
     var myNumber = prompt('Write a number:');
     myNumber = parseInt(myNumber);
 
@@ -29,8 +29,9 @@ function Excersize1() {
         alert('Bad! :(');
     }
 }
+
 // Esercizio 2
-function Excersize2() {
+function Exercize2() {
     var myNumber1 = prompt('Write a number:');
     myNumber1 = parseInt(myNumber1);
 
@@ -46,7 +47,7 @@ function Excersize2() {
 }
 
 //Esercizio 3
-function Excersize3() {
+function Exercize3() {
     var string = prompt('Write a text:');
 
     alert('Another one!');
@@ -61,7 +62,7 @@ function Excersize3() {
     }
 }
 //Esercizio 4
-function Excersize4() {
+function Exercize4() {
     var word = prompt('Write a word');
 
     if( word == 'pizza' || word == 'snack'){
