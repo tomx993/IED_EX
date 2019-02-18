@@ -1,77 +1,113 @@
-//test
+function recall(){
 
-/* 
-var myNumber = prompt('Write a number:');
-myNumber = parseInt(myNumber);
+    alert('Esercizio dei numeri primi!')
 
-if(myNumber < 0 ) {
-    alert('Given number is negative. Absing it..');
-    myNumber = Math.abs(myNumber);
-}
-else{
-    alert('Given number is positive!')
-}
 
-var squareRoot = Math.sqrt(myNumber);
+// FUNCTION
+        function readNumber(){
+            
+            var myNumber = prompt('Scrivi un numero:');
+            myNumber = parseInt(myNumber);
+            return myNumber;
 
-alert(squareRoot);
-*/
+        }
 
-// Esercizio 1
-function Exercize1() {
-    var myNumber = prompt('Write a number:');
-    myNumber = parseInt(myNumber);
+        function isEqualToTen(myNumber){
+            
+            const COMPARABLE_NUMBER = 10;
+            return myNumber == COMPARABLE_NUMBER;
 
-    if(myNumber == 10 ) {
-        alert('Great!');
-    }
-    else{
-        alert('Bad! :(');
-    }
-}
+        }
 
-// Esercizio 2
-function Exercize2() {
-    var myNumber1 = prompt('Write a number:');
-    myNumber1 = parseInt(myNumber1);
+        function printMessage(message){
 
-    var myNumber2 = prompt('Write a second number:');
-    myNumber2 = parseInt(myNumber2);
+            var myMessage = message;
+            alert(myMessage);
+            return;
 
-    if( myNumber1 == myNumber2 ){
-        alert('Twice? Great!!');
-    }
-    else{
-        alert('Bad! :(');
-    }
-}
+        }
 
-//Esercizio 3
-function Exercize3() {
-    var string = prompt('Write a text:');
+        function simpleCheck(){
 
-    alert('Another one!');
+            var myNumber = readNumber();
+            var isThatNumberEqualToTen = isEqualToTen(myNumber);
 
-    var string2 = prompt('Write a second text:');
+            if(isThatNumberEqualToTen){
 
-    if( string == string2 ){
-        alert('You are a badass!!');
-    }
-    else{
-        alert('Wrong man! :(');
-    }
-}
-//Esercizio 4
-function Exercize4() {
-    var word = prompt('Write a word');
+                printMessage('Si, il numero è proprio uguale a 10!');
 
-    if( word == 'pizza' || word == 'snack'){
-        alert('Pausa veloce');
-    }
-    else if( word == 'spaghetti' ){
-        alert('Pausa lunga');
-    }
-    else{
-        alert('Pausa indefinita');
-    }
+            }
+
+        }
+
+        // IF - ELSE
+        function binaryCheck(){
+
+            var myNumber = readNumber();
+            var isThatNumberEqualToTen = isEqualToTen(myNumber);
+
+            if(isThatNumberEqualToTen){
+
+                printMessage('Si, il numero è proprio uguale a 10!');
+
+            }
+            else{
+
+                printMessage('No, non è 10.');
+
+            }
+
+
+        }
+
+        //SWITCH CASE
+        function switchPie(myNumber){
+
+            switch(myNumber){
+
+                case 2:
+                case 5:
+                case 7:
+                case 13:
+                    return 'Primo';
+                case 10:
+                    return 'Base';
+                case 8:
+                case 64:
+                    return 'Octal';
+                default:
+                    return 'None';
+
+            }
+
+        }
+
+        //MAIN
+        /*
+        alert('Simple Check');
+        simpleCheck();
+
+        alert('Binary Check');
+        binaryCheck();
+        */
+
+        //switch caller
+
+        function callSwitch(){
+
+            var aNumber = readNumber();
+            var message = switchPie(aNumber);
+            printMessage(message);
+
+        }
+
+        callSwitch();
+
+
+        // mostra il menu in un alert
+        // leggi l'operazione d aeffetuare
+        // leggi lgi operandi
+        // esegui lo swtich per l'operaione corretta( e salva il risultato )
+        // scrivi il risultato
+
 }
