@@ -37,7 +37,7 @@ function divided(){
 
 }
 
-var result = "";
+var result = null;
 
 switch(operator){
 
@@ -53,5 +53,7 @@ switch(operator){
     case "/":
         divided();
         break
-
+    default:
+        alert('Qualcosa è andato storto!');
+        break;
 }
