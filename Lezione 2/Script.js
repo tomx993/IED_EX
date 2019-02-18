@@ -74,4 +74,6 @@ function Exercize4() {
     else{
         alert('Pausa indefinita');
     }
+
+    return;
 }
