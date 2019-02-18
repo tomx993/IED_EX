@@ -1,4 +1,4 @@
-function recall(){
+function primeNumber(){
 
     alert('Esercizio dei numeri primi!')
 
