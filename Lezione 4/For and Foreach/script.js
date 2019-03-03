@@ -21,6 +21,8 @@ function counterConsole(){
 
 
     console.log('');
+
+    
     // for each
 
     var numbers = [34, 44, 55, 76]
