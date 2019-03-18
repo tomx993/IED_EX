@@ -5,7 +5,7 @@ function counterConsoleIngredients(){
     var recepies = ['Pane', 'Acqua', 'Salame', 'Polenta'];
 
         function printTarget(ingredient){
-            console.log('The word '+ingredient+' have '+ingredient.length+' letters.');
+            console.log('La parola "'+ingredient+'" ha "'+ingredient.length+'" lettere.');
         }
 
 
